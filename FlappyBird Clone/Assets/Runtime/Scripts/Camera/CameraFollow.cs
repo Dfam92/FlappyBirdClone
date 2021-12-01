@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour
         Vector3 playerPos = player.transform.position;
         currentPos = playerPos;
         currentPos.z = playerPos.z + distanceCameraZ;
+        currentPos.y = 0;
         this.transform.position = currentPos;
     }
    
