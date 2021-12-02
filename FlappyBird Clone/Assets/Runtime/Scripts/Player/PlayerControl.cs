@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    [SerializeField] PlayerControlAnim playerAnim;
+
     [SerializeField] private float playerSpeed;
     [SerializeField] private float distanceMaxY;
+    [SerializeField] private float distanceMinY;
     [SerializeField] private float flyUpForce;
     [SerializeField] private float fallDownForce;
     [SerializeField] private float rotationUpForce;
@@ -20,40 +21,47 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerInputs();
+    }
+
+    #region Movimentation
+    private void PlayerInputs()
+    {
         Vector3 position = transform.position;
         Quaternion rotation = transform.rotation;
-        
+
+
         position.x = PlayerMovimentation();
-        if(Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            position.y = PlayerMoveUp();
+            position.y += PlayerMoveUp();
             rotation.z = PlayerRotationUp();
+            playerAnim.FlapWings();
         }
         else
         {
             position.y = PlayerMoveDown();
             rotation.z = PlayerRotationDown();
+            playerAnim.StopFlapWing();
         }
 
         transform.position = position;
         transform.rotation = rotation;
     }
-
     private float PlayerMovimentation()
     {
-       
+
         return transform.position.x + playerSpeed * Time.deltaTime;
     }
     private float PlayerMoveUp()
     {
-        return Mathf.Lerp(transform.position.y, distanceMaxY+transform.position.y, Time.deltaTime * flyUpForce);
-        
+        return Mathf.Lerp(startPos.y, distanceMaxY, Time.deltaTime * flyUpForce);
+
     }
     private float PlayerMoveDown()
     {
-        return Mathf.Lerp(transform.position.y, -distanceMaxY, Time.deltaTime * fallDownForce);
+        return Mathf.Lerp(transform.position.y, -distanceMinY, Time.deltaTime * fallDownForce);
     }
-
     private float PlayerRotationUp()
     {
         return Mathf.Lerp(transform.rotation.z, angleRotationUp, Time.deltaTime * rotationUpForce);
@@ -62,4 +70,6 @@ public class PlayerControl : MonoBehaviour
     {
         return Mathf.Lerp(transform.rotation.z, angleRotationDown, Time.deltaTime * rotationDownForce);
     }
+    #endregion
 }
+
