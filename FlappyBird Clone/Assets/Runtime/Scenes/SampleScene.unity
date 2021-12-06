@@ -222,7 +222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.57}
+  m_LocalPosition: {x: -0, y: 0, z: -0.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -253,6 +253,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1656036637}
+    - target: {fileID: 2076123375702918630, guid: ef77e068979530d408037da0b8289404, type: 3}
+      propertyPath: trackList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2076123375702918630, guid: ef77e068979530d408037da0b8289404, type: 3}
+      propertyPath: numberOfSpawnedTracks
+      value: 2009
+      objectReference: {fileID: 0}
+    - target: {fileID: 2076123375702918630, guid: ef77e068979530d408037da0b8289404, type: 3}
+      propertyPath: trackList.Array.data[0]
+      value: 
+      objectReference: {fileID: -5159235270331515394, guid: cf618e3d90b17f3438a27de2259b7110, type: 3}
     - target: {fileID: 4948281167695377631, guid: ef77e068979530d408037da0b8289404, type: 3}
       propertyPath: m_Name
       value: TrackGenerator
@@ -388,7 +400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7882770551204663934, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7882770551204663934, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
       propertyPath: m_LocalPosition.y
