@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrackGenerator : MonoBehaviour
 {
     [SerializeField] private PlayerControl player;
-    [SerializeField] private TrackSegment track;
+    [SerializeField] private TrackSegment startTrack;
     [SerializeField] private List<TrackSegment> trackList;
     [SerializeField] private List<TrackSegment> nextTrack;
     [SerializeField] private int numberOfSpawnedTracks;
@@ -13,11 +13,10 @@ public class TrackGenerator : MonoBehaviour
 
     private void Start()
     {
-        Vector3 startTrackPos = new Vector3(track.EndPos, track.transform.position.y, transform.position.z);
-
+       
         if ((player.transform.position.x) > trackList[trackList.Count - 1].StartPos)
         {
-            Instantiate(trackList[trackList.Count - 1], startTrackPos, Quaternion.identity);
+            Instantiate(trackList[trackList.Count - 1], startTrack.transform.position, Quaternion.identity);
             nextTrack.Add(trackList[trackList.Count - 1]);
             newTrack = true;
         }
@@ -35,7 +34,7 @@ public class TrackGenerator : MonoBehaviour
     private void SpawnTracks()
     {
         var newNextTrack = nextTrack[nextTrack.Count - 1];
-        for (int i = 0; i < numberOfSpawnedTracks; i++)
+        for (int i = 1; i < numberOfSpawnedTracks; i++)
         {
             Vector3 previousTrackPos = new Vector3(newNextTrack.EndPos , nextTrack[i].transform.position.y, nextTrack[i].transform.position.z);
             Instantiate(newNextTrack,previousTrackPos * i, Quaternion.identity);

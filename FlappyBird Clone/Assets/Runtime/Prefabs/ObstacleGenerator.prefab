@@ -43,3 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e2080fd9fa096f4ab71f09cee4a84e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstacleList:
+  - {fileID: 1358780233029481426, guid: bbcc424f454bcd4408f3d8ef306a5413, type: 3}
+  - {fileID: 136983196979739913, guid: 8ca5cfa45397dab44ac218a1e2b8245a, type: 3}
+  - {fileID: 811274541803550309, guid: 110785d98160d4546b382cd643db3f18, type: 3}
+  track: {fileID: -5159235270331515394, guid: cf618e3d90b17f3438a27de2259b7110, type: 3}
