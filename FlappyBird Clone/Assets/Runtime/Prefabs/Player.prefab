@@ -68,20 +68,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7882770551204663931}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e9d378225ff7e742a58a073db1a6413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnim: {fileID: 7882770551204663932}
   playerSpeed: 1.5
-  distanceMaxY: 30
+  distanceMaxY: 5
   distanceMinY: 6
-  flyUpForce: 4
+  flyUpForce: 25
   fallDownForce: 0.65
   rotationUpForce: 5
-  rotationDownForce: 0.2
-  angleRotationUp: 7
+  rotationDownForce: 0.3
+  angleRotationUp: 10
   angleRotationDown: -4
   startPos: {x: 0, y: 0, z: 0}
 --- !u!114 &7882770551204663932

@@ -6,6 +6,7 @@ public class PlayerControlAnim : MonoBehaviour
 {
     [SerializeField]private Animator playerAnim;
     
+    
     public void FlapWings()
     {
         playerAnim.SetBool("isFlying", true);
@@ -14,5 +15,10 @@ public class PlayerControlAnim : MonoBehaviour
     public void StopFlapWing()
     {
         playerAnim.SetBool("isFlying", false);
+    }
+
+    public void StopFly()
+    {
+        playerAnim.SetTrigger("isPlaying");
     }
 }
