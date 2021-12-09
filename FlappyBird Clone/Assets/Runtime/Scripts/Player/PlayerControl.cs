@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] PlayerControlAnim playerAnim;
+    
 
     [SerializeField] private float playerSpeed;
     [SerializeField] private float distanceMaxY;
@@ -20,13 +21,15 @@ public class PlayerControl : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {
-        PlayerInputs();
+    {   
+       PlayerInputs();
+      
     }
 
     #region Movimentation
     private void PlayerInputs()
     {
+
         Vector3 position = transform.position;
         Quaternion rotation = transform.rotation;
 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8221293367152428986
+--- !u!1 &1517494456365406898
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3387640470745588383}
-  - component: {fileID: -4760967387527289874}
+  - component: {fileID: 1517494456365406908}
+  - component: {fileID: 1517494456365406899}
   m_Layer: 0
-  m_Name: ObstacleGenerator
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3387640470745588383
+--- !u!4 &1517494456365406908
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8221293367152428986}
+  m_GameObject: {fileID: 1517494456365406898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.0352807, y: 2.046656, z: -0.555221}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-4760967387527289874
+--- !u!114 &1517494456365406899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8221293367152428986}
+  m_GameObject: {fileID: 1517494456365406898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2080fd9fa096f4ab71f09cee4a84e0, type: 3}
+  m_Script: {fileID: 11500000, guid: c3cf221951c7dc74a9280a68da63abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleList:
-  - {fileID: -94380271263469166, guid: bbcc424f454bcd4408f3d8ef306a5413, type: 3}
-  - {fileID: 5926584436646880299, guid: 8ca5cfa45397dab44ac218a1e2b8245a, type: 3}
-  - {fileID: 1689378760794584106, guid: 110785d98160d4546b382cd643db3f18, type: 3}
-  track: {fileID: -5159235270331515394, guid: cf618e3d90b17f3438a27de2259b7110, type: 3}
+  player: {fileID: 0}
+  playerAnim: {fileID: 0}
