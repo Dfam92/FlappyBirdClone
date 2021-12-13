@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2103084477}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.008304834, y: 0.0069206655}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -60,7 +60,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9224887, y: 0.60967356}
   m_EdgeRadius: 0
 --- !u!114 &7882770551204663935
 MonoBehaviour:
@@ -75,13 +75,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnim: {fileID: 7882770551204663932}
-  gameManager: {fileID: 0}
   playerSpeed: 1.5
   distanceMaxY: 5
   distanceMinY: 6
-  flyUpForce: 40
+  flyUpForce: 25
   fallDownForce: 0.65
-  rotationUpForce: 10
+  rotationUpForce: 5
   rotationDownForce: 0.3
   angleRotationUp: 5
   angleRotationDown: -2
@@ -133,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1517494456365406899, guid: 910d01f893654aa4e81f42cde2f40a69, type: 3}
+  sensorCollider: {fileID: 2442683021906764680, guid: b0b8a26c9ae5d124bbccc270c978704b, type: 3}
 --- !u!1 &7882770551418206750
 GameObject:
   m_ObjectHideFlags: 0
