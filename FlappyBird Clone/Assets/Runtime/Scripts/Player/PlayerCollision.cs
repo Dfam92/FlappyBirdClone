@@ -8,10 +8,14 @@ public class PlayerCollision : MonoBehaviour
     [SerializeField] private Collider2D sensorCollider;
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Obstacles"))
+        if (collision.gameObject.CompareTag("Obstacles"))
         {
             gameManager.OnGameOver();
         }
         
+        if(collision.gameObject.CompareTag("ScoreSensor"))
+        {
+            gameManager.scoreUpdate++;
+        }
     }
 }
