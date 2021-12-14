@@ -395,7 +395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186.5, y: -315.8}
+  m_AnchoredPosition: {x: 186.5, y: -402.9432}
   m_SizeDelta: {x: 277.5009, y: 114.5886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129539794
@@ -588,7 +588,7 @@ RectTransform:
   - {fileID: 548427335}
   - {fileID: 60772642}
   m_Father: {fileID: 554711354}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1254,15 +1254,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1510168413}
   - {fileID: 262205455}
+  - {fileID: 1510168413}
   - {fileID: 129539793}
   m_Father: {fileID: 23363062}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -149}
   m_SizeDelta: {x: 1080, y: 1920}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &554711355
@@ -1857,7 +1857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 439}
   m_SizeDelta: {x: 670, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1498394683
@@ -1929,11 +1929,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 554711354}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -237, y: -315.85678}
+  m_AnchoredPosition: {x: -237, y: -403}
   m_SizeDelta: {x: 277.5009, y: 114.5886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1510168414
@@ -2151,10 +2151,17 @@ MonoBehaviour:
   player: {fileID: 1656036637}
   playerAnim: {fileID: 1201405777}
   scoreText: {fileID: 1930826438}
+  scoreOnBox: {fileID: 1039425664}
+  scoreRecord: {fileID: 60772643}
   mainTitle: {fileID: 377214390}
   inGameUI: {fileID: 1565957358}
   HUD: {fileID: 554711353}
   gameOverText: {fileID: 1498394681}
+  medals:
+  - {fileID: 416903994}
+  - {fileID: 458979689}
+  - {fileID: 1819540919}
+  - {fileID: 177973298}
   scoreUpdate: 0
 --- !u!4 &1705698472
 Transform:

@@ -4,12 +4,13 @@ public class PlayerControl : MonoBehaviour
 {
     [SerializeField] PlayerControlAnim playerAnim;
     
-
+    [Header("Player Movement")]
     [SerializeField] private float playerSpeed;
     [SerializeField] private float distanceMaxY;
     [SerializeField] private float distanceMinY;
     [SerializeField] private float flyUpForce;
     [SerializeField] private float fallDownForce;
+    [Header("Player Rotation")]
     [SerializeField] private float rotationUpForce;
     [SerializeField] private float rotationDownForce;
     [SerializeField] private float angleRotationUp;
