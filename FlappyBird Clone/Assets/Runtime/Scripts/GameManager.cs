@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverText;
     [SerializeField] private List<GameObject> medals;
 
+    [SerializeField] private AudioManager gameManagerSound;
+    [SerializeField] private AudioClip gameOverSound;
+    [SerializeField] private AudioClip buttonClickSound;
+
     public int scoreUpdate = 0;
     private int betterScore;
     private bool startGame;
@@ -73,6 +77,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         HUD.SetActive(true);
+        gameManagerSound.PlayAudio(gameOverSound);
     }
 
     private void SaveState()
@@ -83,6 +88,11 @@ public class GameManager : MonoBehaviour
             betterScore = PlayerPrefs.GetInt("HighScore", scoreUpdate);
         }
         scoreRecord.text = " " + betterScore;
+    }
+
+    public void ButtonSound()
+    {
+        gameManagerSound.PlayAudio(buttonClickSound);
     }
 
     private void SetMedals()

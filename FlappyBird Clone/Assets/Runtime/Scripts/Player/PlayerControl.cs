@@ -3,6 +3,9 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] PlayerControlAnim playerAnim;
+    [SerializeField] AudioManager playerAudio;
+
+    [SerializeField] AudioClip playerFlapAudio;
     
     [Header("Player Movement")]
     [SerializeField] private float playerSpeed;
@@ -40,6 +43,7 @@ public class PlayerControl : MonoBehaviour
             position.y += PlayerMoveUp();
             rotation.z = PlayerRotationUp();
             playerAnim.FlapWings();
+            playerAudio.PlayAudio(playerFlapAudio);
         }
         else
         {
