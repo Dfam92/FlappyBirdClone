@@ -441,7 +441,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 129539795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1705698471}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &129539795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2791,30 +2803,6 @@ PrefabInstance:
       propertyPath: collisionAudio
       value: 
       objectReference: {fileID: 1347071256}
-    - target: {fileID: 2103084477, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
-      propertyPath: scoreUpdateSound
-      value: 
-      objectReference: {fileID: 8300000, guid: e8f2d19d3462b59478ffe447edf43272, type: 3}
-    - target: {fileID: 2103084477, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
-      propertyPath: obstacleCollisionSound
-      value: 
-      objectReference: {fileID: 8300000, guid: f5de805b52df2fe4ea1579963193a9d4, type: 3}
-    - target: {fileID: 7882770551204663928, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
-      propertyPath: m_Size.x
-      value: 0.81118727
-      objectReference: {fileID: 0}
-    - target: {fileID: 7882770551204663928, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
-      propertyPath: m_Size.y
-      value: 0.50084555
-      objectReference: {fileID: 0}
-    - target: {fileID: 7882770551204663928, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.00212121
-      objectReference: {fileID: 0}
-    - target: {fileID: 7882770551204663928, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.0029728115
-      objectReference: {fileID: 0}
     - target: {fileID: 7882770551204663931, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2864,12 +2852,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7882770551204663935, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
+      propertyPath: flyUpForce
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7882770551204663935, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
       propertyPath: playerAudio
       value: 
       objectReference: {fileID: 1347071256}
     - target: {fileID: 7882770551204663935, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}
-      propertyPath: playerFlapAudio
-      value: 
-      objectReference: {fileID: 8300000, guid: 441b79c453836f6438f1d25ce1e7ee04, type: 3}
+      propertyPath: angleRotationUp
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ae6e67e66666174cacf4d073aa912e0, type: 3}

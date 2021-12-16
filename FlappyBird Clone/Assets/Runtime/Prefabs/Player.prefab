@@ -49,7 +49,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008304834, y: 0.0069206655}
+  m_Offset: {x: -0.00212121, y: -0.0029728115}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -60,7 +60,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9224887, y: 0.60967356}
+  m_Size: {x: 0.81118727, y: 0.50084555}
   m_EdgeRadius: 0
 --- !u!114 &7882770551204663935
 MonoBehaviour:
@@ -75,15 +75,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnim: {fileID: 7882770551204663932}
+  playerAudio: {fileID: 0}
+  playerFlapAudio: {fileID: 8300000, guid: 441b79c453836f6438f1d25ce1e7ee04, type: 3}
   playerSpeed: 1.5
   distanceMaxY: 5
   distanceMinY: 6
-  flyUpForce: 25
+  flyUpForce: 17
   fallDownForce: 0.65
   rotationUpForce: 5
   rotationDownForce: 0.3
   angleRotationUp: 5
-  angleRotationDown: -2
+  angleRotationDown: -3
   startPos: {x: 0, y: 0, z: 0}
 --- !u!114 &7882770551204663932
 MonoBehaviour:
@@ -131,8 +133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2849a639ea3716a4ab80325a8bb69bc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1517494456365406899, guid: 910d01f893654aa4e81f42cde2f40a69, type: 3}
+  gameManager: {fileID: 0}
   sensorCollider: {fileID: 2442683021906764680, guid: b0b8a26c9ae5d124bbccc270c978704b, type: 3}
+  collisionAudio: {fileID: 0}
+  obstacleCollisionSound: {fileID: 8300000, guid: f5de805b52df2fe4ea1579963193a9d4, type: 3}
+  scoreUpdateSound: {fileID: 8300000, guid: e8f2d19d3462b59478ffe447edf43272, type: 3}
 --- !u!1 &7882770551418206750
 GameObject:
   m_ObjectHideFlags: 0

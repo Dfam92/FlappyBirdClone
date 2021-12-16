@@ -38,7 +38,8 @@ public class PlayerControl : MonoBehaviour
 
 
         position.x = PlayerMovimentation();
-        if (Input.GetKeyDown(KeyCode.W))
+       
+        if ((Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
             position.y += PlayerMoveUp();
             rotation.z = PlayerRotationUp();
@@ -51,6 +52,7 @@ public class PlayerControl : MonoBehaviour
             rotation.z = PlayerRotationDown();
             playerAnim.StopFlapWing();
         }
+
 
         transform.position = position;
         transform.rotation = rotation;

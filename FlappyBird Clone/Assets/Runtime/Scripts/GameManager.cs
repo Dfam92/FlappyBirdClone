@@ -95,6 +95,10 @@ public class GameManager : MonoBehaviour
         gameManagerSound.PlayAudio(buttonClickSound);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
     private void SetMedals()
     {
        if(scoreUpdate  < 10 && scoreUpdate > 0)
